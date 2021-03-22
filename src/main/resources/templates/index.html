@@ -10,11 +10,11 @@
 </head>
 <body>
 <header>
-    <h1>Welcome to index</h1>
+    <p><span th:text="${index}"></span></p>
     <nav th:insert="fragments/nav :: nav_fragment"></nav>
     <footer th:insert="fragments/footer :: footer_fragment"></footer>
 
-    <button class="bg-dark " th:href="@{home}">home</button>
+    <a  class="btn bg-danger" th:href="@{/}">home</a >
 </header>
 
 </body>
