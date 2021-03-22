@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css} "/>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>index</title>
 </head>
 <body>
-<header>
     <h1>Home</h1>
-</header>
+<nav th:insert="fragments/nav :: nav_fragment"></nav>
+<footer th:insert="fragments/footer :: footer_fragment"></footer>
+
+    <button class="bg-dark " th:href="@{/index}">index</button>
+
 </body>
 </html>

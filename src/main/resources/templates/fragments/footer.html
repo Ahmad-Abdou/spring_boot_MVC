@@ -6,16 +6,11 @@
     <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>footer</title>
 </head>
 <body>
-<header>
-    <h1>Welcome to index</h1>
-    <nav th:insert="fragments/nav :: nav_fragment"></nav>
-    <footer th:insert="fragments/footer :: footer_fragment"></footer>
-
-    <button class="bg-dark " th:href="@{home}">home</button>
-</header>
-
+<footer th:fragment="footer_fragment">
+    <p class="bg-dark text-white p-3 ">Copy right &copy; </p>
+</footer>
 </body>
 </html>
